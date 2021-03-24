@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    height: 80px;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    color: #000;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.col order-first,
+.col order-first a:hover {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('../pictures/watch2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content h2,
+.content h3 {
+    font-size: 150%;
+    margin: 20px 0;
+}
+
+.content p {
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+
+/*colomns*/
+
+.column {
+    float: left;
+    width: 20%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    padding-left: 100px;
+}
+
+
+/*text in an image*/
+
+
+/* Centered text */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*sell*/
+
+.sell {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+/*words*/
+
+.words {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    padding-right: 120px;
+}
+
+
+/*images*/
+
+.picture {
+    border-radius: 20px;
+}
+
+
+/*hero contact us*/
+
+.hero2 {
+    background-color: #fff;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+
+/*colomns*/
+
+.column2 {
+    float: left;
+    width: 15%;
+    margin-right: 10px;
+}
+
+
+/* Clear floats after the columns */
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2 {
+    margin-right: 20px;
+}
+
+.hero3 {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 10vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero-1 {
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+
+/*image fade*/
+
+.hero2 {
+    margin-top: 10px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero2 h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero2 p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content h2,
+.content h3 {
+    font-size: 150%;
+    margin: 20px 0;
+}
+
+.content p {
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+.h4 {
+    padding-left: 430px;
+    padding-top: 50px;
+}
+
+
+/*Footer*/
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
+
+
+/*social*/
+
+.social ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Form*/
+
+h1 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+form {
+    position: relative;
+    width: 80%;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.form-left-decoration,
+.form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background: #5a7233;
+}
+
+.form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+}
+
+.form-right-decoration {
+    top: 60px;
+    right: -30px;
+}
+
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.form-left-decoration:before {
+    top: -20px;
+}
+
+.form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+}
+
+.form-right-decoration:before {
+    top: -20px;
+    right: 0;
+}
+
+.form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.form-inner {
+    padding: 40px;
+}
+
+.form-inner input,
+.form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #d0dfe8;
+}
+
+.form-inner textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #3e4f24;
+    background: #5a7233;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+button:hover {
+    background: #3e4f24;
+}
+
+@media (min-width: 568px) {
+    form {
+        width: 60%;
+    }
+}
+
+
+/*men column*/
+
+
+/* Create two equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-md {
+    width: 400px;
+    height: 400px;
+}
+
+.treasures {
+    padding-top: 25%;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+
+
+/*Hero for men and women pages*/
+
+.hero2 {
+    background-image: url('../pictures/white.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+
+/*hero for products page*/
+
+.hero3 {
+    background-image: url('../pictures/omega\ wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero3 h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero3 p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.col-md {
+    padding-top: 13%;
+}
+
+
+/*zoom hover over the images*/
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    /* Animation */
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/*hero sale page*/
+
+.heroSale {
+    background-image: url('../pictures/sale2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.heroSale::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.heroSale h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.heroSale p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.saleItems {
+    padding-top: 20px;
+    padding-right: 20px;
+}
