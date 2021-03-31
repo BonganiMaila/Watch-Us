@@ -48,5 +48,5 @@ It provides an easy access for consumers to buy watches which at times can prove
 
 ## Contributors
 
-### Bongani Maila - 2020
+### Bongani Maila - 2021
 ## still working on this project
