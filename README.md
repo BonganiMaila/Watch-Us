@@ -28,6 +28,7 @@ It provides an easy access for consumers to buy watches which at times can prove
 - Bootstrap
 - PHP
 - MySql
+- Apache Server
 
 
 
