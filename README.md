@@ -43,7 +43,16 @@ It provides an easy access for consumers to buy watches which at times can prove
 ## Screenshots of the pages
 
 ### Index
-![](https://github.com/BonganiMaila/)
+![](https://github.com/BonganiMaila/Watch-Us/blob/main/e-commerce/screenshots/index1.png)
+
+### Women
+![](https://github.com/BonganiMaila/Watch-Us/blob/main/e-commerce/screenshots/women.png)
+
+### Blog
+![](https://github.com/BonganiMaila/Watch-Us/blob/main/e-commerce/screenshots/blog.png)
+
+### Watches
+![](https://github.com/BonganiMaila/Watch-Us/blob/main/e-commerce/screenshots/watches.png)
 
 
 
